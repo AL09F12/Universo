@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+        <link href="css/universo.min.css" rel="stylesheet" href="css/mi estilo.css">
+
+    
+    <style>
+  .panel-content {
+    padding: 1em;
+  }
+
+
+
+  #vista
+  {
+	  position:absolute;
+	  left:30%;
+
+  }
+  
+  
+  #logo
+  {
+	  position:absolute;
+	  top:84px;
+	  left:10%;
+  }
+
+#vista img {
+    -webkit-transition:1s;
+			  opacity: 0;  
+}
+#vista img.clicked{
+     opacity:1.0;
+ }
+  
+  
+  #logo img {
+    -webkit-transition:1s;
+}
+#logo img.clicked{
+     opacity:0;
+ }
+
+  
+  </style>
+    
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/acciones.js"></script>        
+        
+
+
+
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+
+     
+
+           
+<div data-role="page" id="bienvenida" data-theme="a">
+
+	
+    <div data-role="content">	
+
+    <div id="logo" align="center" >
+<img src="imagenes/9.jpg" width="150" height="170">
+    </div>
+    <div id="vista" align="center">
+<img  id="full_rex" src="imagenes/11.jpg" width="360" height="320" >
+    </div>
+
+	<audio id="roar" preload="auto" src="audio/roar.mp3">
+       </audio>
+    </div>
+    
+
+</div>
+
+
+    
+        <div data-role="page" id="principal" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1> "El Universo" </h1>
+        <div align="center">
+        <a href="#defaultpanel" data-role="button" data-icon="star" data-iconpos="notext" data-inline="true" id="#B_Vibrar">Menú</a>
+        </div>   
+	</div>
+
+	<div data-role="content">	
+     <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+      <p align="center"> El universo es la totalidad del espacio y del tiempo, de todas las formas de la materia, la energía y el impulso, las leyes y constantes físicas que las gobiernan. Sin embargo, el término también se utiliza en sentidos contextuales ligeramente diferentes y alude a conceptos como cosmos, mundo o naturaleza.
+      </p>
+      <div align="center">
+<img src="imagenes/14.jpg" width="450" height="480">
+</div>
+     </div>
+	</div>
+    
+	<div data-role="footer" data-position="fixed">
+<h4> Mariel Flores </h4>
+	</div>
+    
+<!-- Panel Menu  -->
+  <div data-role="panel" id="defaultpanel" data-theme="a" data-display="overlay">
+ 
+    <div class="panel-content" align="center">
+      <h3>Menú</h3>
+<img src="imagenes/12.jpg" width="170" height="74">
+
+<div data-role="controlgroup">
+<a data-role="button" id="Teo_un">Teoria sobre el origen del Universo</a> 
+<a data-role="button" id="Gal">Galaxias</a>
+<a data-role="button" id="Es">Estrellas</a>
+<a data-role="button" id="Com_ast">Cometas y Asteroides</a>
+<a data-role="button" id="Satel">Satélites</a>
+<a data-role="button" id="Plan">Los planetas</a>
+</div>
+
+      <a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true" id="#B_Vibrar">Cerrar</a>
+    </div><!-- /contenido del panel-->
+  </div><!-- /panel de menu -->
+    
+    
+</div>
+
+<div data-role="page" id="Teo" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1> Teoria sobre el Origen del Universo </h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="star" data-iconpos="notext" data-inline="true" id="#B_Vibrar">Menú</a>
+        </div>
+        </div>
+      
+            <div data-role="content">	
+         <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+         <p align="center"> Teoría sobre el origen y la formación del Universo (Big Bang)
+<br>
+<br>
+El hecho de que el universo esté en expansión se deriva de las observaciones del corrimiento al rojo realizadas en la década de 1920 y que se cuantifican por la ley de Hubble. Dichas observaciones son la predicción experimental del modelo de Friedmann-Robertson-Walker, que es una solución de las ecuaciones de campo de Einstein de la relatividad general, que predicen el inicio del universo mediante un big bang.
+<br> 
+<br>
+El "corrimiento al rojo" es un fenómeno observado por los astrónomos, que muestra una relación directa entre la distancia de un objeto remoto (como una galaxia) y la velocidad con la que éste se aleja. Si esta expansión ha sido continua a lo largo de la vida del universo, entonces en el pasado estos objetos distantes que siguen alejándose tuvieron que estar una vez juntos. Esta idea da pie a la teoría del Big Bang; el modelo dominante en la cosmología actual.
+<br>
+<br>
+Durante la era más temprana del Big Bang, se cree que el universo era un caliente y denso plasma. Según avanzó la expansión, la temperatura decreció hasta el punto en que se pudieron formar los átomos. En aquella época, la energía de fondo se desacopló de la materia y fue libre de viajar a través del espacio. La energía remanente continuó enfriándose al expandirse el universo y hoy forma el fondo cósmico de microondas. Esta radiación de fondo es remarcablemente uniforme en todas direcciones, circunstancia que los cosmólogos han intentado explicar como reflejo de un periodo temprano de inflación cósmica después del Big Bang.
+<br>
+<br>
+El examen de las pequeñas variaciones en el fondo de radiación de microondas proporciona información sobre la naturaleza del universo, incluyendo la edad y composición. La edad del universo desde el Big Bang, de acuerdo a la información actual proporcionada por el WMAP de la NASA, se estima en unos 13.700 millones de años, con un margen de error de un 1% (137 millones de años). Otros métodos de estimación ofrecen diferentes rangos de edad, desde 11.000 millones a 20.000 millones.
+ </p>
+           
+	</div>
+	
+    	
+    <div align="center">
+    <img src="imagenes/10.gif" width="382" height="186">
+    </div>
+	
+   
+    </div>
+	<div data-role="footer" data-position="fixed">
+<h4> Mariel Flores </h4>
+		
+	</div>
+</div>
+
+<div data-role="page" id="Galaxias" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1> Galaxias </h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="star" data-iconpos="notext" data-inline="true" id="#B_Vibrar">Menú</a>
+        </div>   
+	</div>
+    
+    <div data-role="content">
+    <div align="center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <img src="imagenes/4.jpg" width="382" height="186">
+    </div>
+        	
+	     <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+      <p align="center"> Las galaxias son agrupaciones masivas de estrellas, y son las estructuras más grandes en las que se organiza la materia en el universo. A través del telescopio se manifiestan como manchas luminosas de diferentes formas. A la hora de clasificarlas, los científicos distinguen entre las galaxias del Grupo Local, compuesto por las treinta galaxias más cercanas y a las que está unida gravitacionalmente nuestra galaxia (la Vía Láctea), y todas las demás galaxias, a las que llaman "galaxias exteriores".
+      <br>
+      <br>
+Las galaxias están distribuidas por todo el universo y presentan características muy diversas, tanto en lo que respecta a su configuración como a su antigüedad. Las más pequeñas abarcan alrededor de 3.000 millones de estrellas, y las galaxias de mayor tamaño pueden llegar a abarcar más de un billón de astros. Estas últimas pueden tener un diámetro de 170.000 años luz, mientras que las primeras no suelen exceder de los 6.000 años luz.
+Además de estrellas y sus astros asociados (planetas, asteroides, etc...), las galaxias contienen también materia interestelar, constituida por polvo y gas en una proporción que varia entre el 1 y el 10% de su masa.
+<br>
+<br>
+Se estima que el universo puede estar constituido por unos 100.000 millones de galaxias, aunque estas cifras varían en función de los diferentes estudios.
+
+      </p>
+    </div>
+    </div>
+	<div data-role="footer" data-position="fixed">
+<h4> Mariel Flores </h4>
+		
+	</div>
+</div>
+
+<div data-role="page" id="Estrellas" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>Estrellas</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="star" data-iconpos="notext" data-inline="true" id="#B_Vibrar">Menú</a>
+        </div>   
+	</div>
+     <div data-role="content">	
+    <div align="center">
+    <img src="imagenes/5.jpg" width="382" height="186">
+    </div>
+    
+      
+	     <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+      <p align="center"> 
+      
+Son los elementos constitutivos más destacados de las galaxias.
+<br>
+ Las estrellas son enormes esferas de gas que brillan debido a sus gigantescas reacciones nucleares. Cuando debido a la fuerza gravitatoria, la presión y la temperatura del interior de una estrella es suficientemente intensa, se inicia la fusión nuclear de sus átomos, y comienzan a emitir una luz roja oscura, que después se mueve hacia el estado superior, que es en el que está nuestro Sol, para posteriormente, al modificarse las reacciones nucleares interiores, dilatarse y finalmente enfriarse.
+ <br>
+ <br>
+Al acabarse el hidrógeno, se originan reacciones nucleares de elementos más pesados, más energéticas, que convierten la estrella en una gigante roja. Con el tiempo, ésta vuelve inestable, a la vez que lanza hacia el espacio exterior la mayor parte del material estelar. Este proceso puede durar 100 millones de años, hasta que se agota toda la energía nuclear, y la estrella se contrae por efecto de la gravedad hasta hacerse pequeña y densa, en la forma de enana blanca, azul o marrón. Si la estrella inicial es varias veces más masiva que el Sol, su ciclo puede ser diferente, y en lugar de una gigante, puede convertirse en una supergigante y acabar su vida con una explosión denominada supernova. Estas estrellas pueden acabar como estrellas de neutrones. Tamaños aún mayores de estrellas pueden consumir todo su combustible muy rápidamente, transformándose en una entidad supermasiva llamada agujero negro.
+      </p>
+    </div>
+</div>
+    
+	<div data-role="footer" data-position="fixed">
+<h4> Mariel Flores </h4>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="C_a" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1> Cometas y Asteroides </h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="star" data-iconpos="notext" data-inline="true" id="#B_Vibrar">Menú</a>
+        </div>
+        </div>
+      
+            <div data-role="content">	
+         <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+         <p align="center"> En aquellas zonas de la órbita de una estrella en las que, por diversos motivos, no se ha producido la agrupación de la materia inicial en un único cuerpo dominante o planeta, aparecen los discos de asteroides: objetos rocosos de muy diversos tamaños que orbitan en grandes cantidades en torno a la estrella, chocando eventualmente entre sí.
+         <br>
+          Cuando las rocas tienen diámetros inferiores a 50m se denominan meteoroides. A consecuencia de las colisiones, algunos asteroides pueden variar sus órbitas, adoptando trayectorias muy excéntricas que periódicamente les acercan la estrella. 
+          <br>
+          Cuando la composición de estas rocas es rica en agua u otros elementos volátiles, el acercamiento a la estrella y su consecuente aumento de temperatura origina que parte de su masa se evapore y sea arrastrada por el viento solar, creando una larga cola de material brillante a medida que la roca se acerca a la estrella.
+          <br> Estos objetos se denominan cometas. En nuestro sistema solar hay dos grandes discos de asteroides: uno situado entre las órbitas de Marte y Júpiter, denominado el Cinturón de asteroides, y otro mucho más tenue y disperso en los límites del sistema solar, a aproximadamente un año luz de distancia, denominadoNube de Oort.
+ </p>
+           
+	</div>
+		
+    <div align="center">
+    <img src="imagenes/16.jpg" width="382" height="186">
+    </div>
+
+    </div>
+	<div data-role="footer" data-position="fixed">
+<h4> Mariel Flores </h4>
+		
+	</div>
+</div>
+
+
+<div data-role="page" id="Satelites" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1> Los Satélites </h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="star" data-iconpos="notext" data-inline="true" id="#B_Vibrar">Menú</a>
+        </div>
+        </div>
+      
+            <div data-role="content">	
+         <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+         <p align="center"> Los satélites naturales son astros que giran alrededor de los planetas.
+         <br>
+          El único satélite natural de la Tierra es laLuna, que es también el satélite más cercano al sol.
+          <br>
+          <br>
+           A continuación se enumeran los principales satélites de los planetas del sistema solar (se incluye en el listado a Plutón, considerado por la UAI como un planeta enano).
+           <br>
+           <br>
+•	Tierra: 1 satélite ? Luna
+           <br>
+           <br>
+•	Marte: 2 satélites ? Fobos, Deimos
+           <br>
+           <br>
+•	Júpiter: 63 satélites ? Metis, Adrastea, Amaltea, Tebe, Ío, Europa, Ganimedes, Calisto, Leda, Himalia, Lisitea,Elara, Ananké, Carmé, Pasífae, Sinope...
+           <br>
+           <br>
+•	Saturno: 59 satélites ? Pan, Atlas, Prometeo, Pandora, Epimeteo, Jano, Mimas, Encélado, Tetis, Telesto,Calipso, Dione, Helena, Rea, Titán, Hiperión, Jápeto, Febe...
+           <br>
+           <br>
+•	Urano: 15 satélites ? Cordelia, Ofelia, Bianca, Crésida, Desdémona, Julieta, Porcia, Rosalinda, Belinda, Puck,Miranda, Ariel, Umbriel, Titania, Oberón.
+           <br>
+           <br>
+•	Neptuno: 8 satélites ? Náyade, Talasa, Despina, Galatea, Larisa, Proteo, Tritón, Nereida
+           <br>
+           <br>
+•	Plutón: 5 satélites ? Caronte, Nix, Hidra, Cerbero y Estigia
+
+ </p>
+           
+	</div>
+	
+   	
+    <div align="center">
+    <img src="imagenes/17.png" width="300" height="250">
+    </div>
+	
+    </div>
+   
+	<div data-role="footer" data-position="fixed">
+<h4> Mariel Flores </h4>
+		
+	</div>
+</div>
+
+
+
+<div data-role="page" id="Planetas" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1> Los Planetas </h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="star" data-iconpos="notext" data-inline="true" id="#B_Vibrar">Menú</a>
+        </div>
+        </div>
+      
+            <div data-role="content">	
+         <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+         <p align="center"> Los planetas son cuerpos que giran en torno a una estrella y que, según la definición de la Unión Astronómica Internacional, deben cumplir además la condición de haber limpiado su órbita de otros cuerpos rocosos importantes, y de tener suficiente masa como para que su fuerza de gravedad genere un cuerpo esférico.
+         <br>
+         <br>
+          En el caso de cuerpos que orbitan alrededor de una estrella que no cumplan estas características, se habla deplanetas enanos, planetesimales, o asteroides. En nuestro Sistema Solar hay 8 planetas: Mercurio, Venus, Tierra,Marte, Júpiter, Saturno, Urano y Neptuno, considerándose desde 2006 a Plutón como un planeta enano. A finales de 2009, fuera de nuestro Sistema Solar se han detectado más de 400 planetas extrasolares, pero los avances tecnológicos están permitiendo que este número crezca a buen ritmo.
+ </p>
+           
+	</div>
+	
+   	
+    <div align="center">
+    <img src="imagenes/6.jpg" width="350" height="180">
+    </div>
+	
+   
+    </div>
+	<div data-role="footer" data-position="fixed">
+<h4> Mariel Flores </h4>
+		
+	</div>
+</div>
+
+
+
+    </body>
+
+</html>
